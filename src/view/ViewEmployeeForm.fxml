@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewEmployeeFormController">
+   <children>
+      <TableView fx:id="tblEmployee" layoutX="13.0" layoutY="163.0" prefHeight="601.0" prefWidth="1024.0">
+        <columns>
+          <TableColumn fx:id="colNIC" prefWidth="131.0" text="NIC" />
+          <TableColumn fx:id="colName" prefWidth="129.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="148.0" text="Address" />
+            <TableColumn fx:id="colTelephone" prefWidth="218.0" text="Telephone" />
+            <TableColumn fx:id="colPosition" prefWidth="197.0" text="Position" />
+            <TableColumn fx:id="colSalary" prefWidth="200.0" text="Salary" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="130.0" fitWidth="1050.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/View%20EmployeeForm.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDate" layoutX="660.0" layoutY="84.0" text="Date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="881.0" layoutY="84.0" text="Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewPaymentFormController">
+   <children>
+      <TableView fx:id="tblPayment" layoutX="17.0" layoutY="200.0" prefHeight="628.0" prefWidth="1016.0">
+        <columns>
+          <TableColumn fx:id="colPaymentID" prefWidth="186.0" text="Payment ID" />
+          <TableColumn fx:id="colServiceID" prefWidth="251.0" text="Service ID" />
+            <TableColumn fx:id="colAmount" prefWidth="247.0" text="Amount" />
+            <TableColumn fx:id="colDate" prefWidth="179.0" text="Date" />
+            <TableColumn fx:id="colTime" prefWidth="152.0" text="Time" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="130.0" fitWidth="1050.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/View%20PaymentForm.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTime" layoutX="896.0" layoutY="82.0" text="Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="671.0" layoutY="82.0" text="Date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

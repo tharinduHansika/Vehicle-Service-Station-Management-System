@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="800.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServiceFormController">
+   <children>
+      <AnchorPane layoutX="686.0" layoutY="604.0" prefHeight="96.0" prefWidth="267.0" style="-fx-background-color: #bdc3c7; -fx-background-radius: 15;" />
+      <ImageView fitHeight="130.0" fitWidth="1050.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/ServiceForm.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="934.0" layoutY="242.0" prefHeight="42.0" prefWidth="78.0" style="-fx-background-color: #bdc3c7; -fx-background-radius: 10;">
+         <children>
+            <JFXTextField fx:id="txtQty" layoutX="13.0" layoutY="9.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="53.0" promptText="Qty" unFocusColor="BLACK" />
+         </children>
+      </AnchorPane>
+      <JFXComboBox fx:id="cmbVehicleNo" layoutX="36.0" layoutY="159.0" prefHeight="25.0" prefWidth="128.0" promptText="Vehicle No" />
+      <JFXTextField fx:id="txtType" layoutX="185.0" layoutY="159.0" prefHeight="25.0" prefWidth="102.0" promptText="Type" />
+      <JFXTextField fx:id="txtMileage" layoutX="490.0" layoutY="159.0" prefHeight="25.0" prefWidth="142.0" promptText="Mileage" />
+      <JFXTextField fx:id="txtTransmission" layoutX="818.0" layoutY="159.0" prefHeight="25.0" prefWidth="123.0" promptText="Transmission" />
+      <JFXTextField fx:id="txtVehicleBrand" layoutX="313.0" layoutY="159.0" prefHeight="25.0" prefWidth="142.0" promptText="Brand" />
+      <JFXTextField fx:id="txtFuelType" layoutX="675.0" layoutY="159.0" prefHeight="25.0" prefWidth="102.0" promptText="Fuel Type" />
+      <TableView fx:id="tblServiceDetails" layoutX="14.0" layoutY="342.0" prefHeight="257.0" prefWidth="1023.0">
+        <columns>
+          <TableColumn fx:id="colSparePartID" prefWidth="93.0" text="SparePart ID" />
+          <TableColumn fx:id="colName" prefWidth="134.0" text="Name" />
+            <TableColumn fx:id="colBrand" prefWidth="119.0" text="Brand" />
+            <TableColumn fx:id="colDescription" prefWidth="191.0" text="Description" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="153.0" text="Unit Price" />
+            <TableColumn fx:id="colQty" prefWidth="98.0" text="Qty" />
+            <TableColumn fx:id="colTotal" prefWidth="136.0" text="Total" />
+            <TableColumn fx:id="colOperation" prefWidth="98.0" text="Operation" />
+        </columns>
+      </TableView>
+      <JFXComboBox fx:id="cmbEmployeeID" layoutX="587.0" layoutY="200.0" prefHeight="25.0" prefWidth="128.0" promptText="Employee ID" />
+      <JFXTextField fx:id="txtEmployeeName" layoutX="744.0" layoutY="201.0" prefHeight="25.0" prefWidth="102.0" promptText="Name" />
+      <JFXTextField fx:id="txtPosition" layoutX="870.0" layoutY="201.0" prefHeight="25.0" prefWidth="142.0" promptText="Position" />
+      <JFXComboBox fx:id="cmbSparePartID" layoutX="36.0" layoutY="249.0" prefHeight="25.0" prefWidth="128.0" promptText="SparePart ID" />
+      <JFXTextField fx:id="txtSparePartName" layoutX="190.0" layoutY="250.0" prefHeight="25.0" prefWidth="102.0" promptText="Name" />
+      <JFXTextField fx:id="txtSparePartDescription" layoutX="463.0" layoutY="250.0" prefHeight="25.0" prefWidth="142.0" promptText="Description" />
+      <JFXTextField fx:id="txtSparePartBrand" layoutX="313.0" layoutY="250.0" prefHeight="25.0" prefWidth="123.0" promptText="Brand" />
+      <JFXTextField fx:id="txtQtyOnHand" layoutX="629.0" layoutY="250.0" prefHeight="25.0" prefWidth="102.0" promptText="Qty On Hand" />
+      <JFXButton fx:id="btnAddToCart" layoutX="934.0" layoutY="303.0" onAction="#btnAddToCartOnAction" style="-fx-background-color: #27ae60;" text="Add to Cart" textFill="WHITE" />
+      <JFXButton fx:id="btnPlaceOrder" layoutX="923.0" layoutY="743.0" onAction="#btnPlaceOrderOnAction" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #27ae60;" text="Place Order" textFill="WHITE" />
+      <JFXTextField fx:id="txtServiceCharge" layoutX="799.0" layoutY="619.0" onAction="#serviceChargeOnAction" prefHeight="25.0" prefWidth="142.0" promptText="Name" text="0.00" />
+      <Label layoutX="700.0" layoutY="623.0" text="Service Charge : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="747.0" layoutY="664.0" text="Total :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="txtTotal" layoutX="799.0" layoutY="664.0" text="0.00">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="555.0" layoutY="207.0" orientation="VERTICAL" prefHeight="27.0" prefWidth="6.0" />
+      <JFXTextField fx:id="txtServiceDescription" layoutX="236.0" layoutY="200.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="267.0" promptText="Description" />
+      <JFXComboBox fx:id="cmbServiceName" layoutX="36.0" layoutY="200.0" prefHeight="25.0" prefWidth="142.0" promptText="Service Name" />
+      <JFXTextField fx:id="txtUnitPrice" layoutX="777.0" layoutY="250.0" prefHeight="25.0" prefWidth="102.0" promptText="Unit Price" />
+      <JFXButton layoutX="981.0" layoutY="159.0" onAction="#openNewVehicleOnAction" style="-fx-background-color: #e67e22;" text="+" textFill="WHITE" />
+      <Separator layoutX="918.0" layoutY="241.0" orientation="VERTICAL" prefHeight="42.0" prefWidth="6.0" />
+      <JFXButton layoutX="818.0" layoutY="303.0" onAction="#btnRemoveActionOnAction" style="-fx-background-color: #e74c3c;" text="Remove Item" textFill="WHITE" />
+      <Label fx:id="lblTime" layoutX="885.0" layoutY="85.0" text="Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="lblDate" layoutX="666.0" layoutY="85.0" text="Date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

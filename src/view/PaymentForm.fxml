@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentFormController">
+   <children>
+      <Label layoutX="25.0" layoutY="21.0" text="Payment Form" textFill="#6f47d5">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <TableView layoutX="17.0" layoutY="165.0" prefHeight="567.0" prefWidth="1016.0">
+         <columns>
+            <TableColumn prefWidth="114.0" text="Payment ID" />
+            <TableColumn prefWidth="174.0" text="Service ID" />
+            <TableColumn prefWidth="167.0" text="Service Charge" />
+            <TableColumn prefWidth="194.0" text="Amount" />
+            <TableColumn prefWidth="202.0" text="Date" />
+            <TableColumn prefWidth="164.0" text="Time" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

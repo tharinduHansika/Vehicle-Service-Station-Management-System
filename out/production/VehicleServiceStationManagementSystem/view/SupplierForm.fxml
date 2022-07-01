@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplierFormController">
+   <children>
+      <JFXButton fx:id="btnSave" layoutX="961.0" layoutY="163.0" onAction="#btnSaveOnAction" prefHeight="27.0" prefWidth="75.0" style="-fx-background-color: #27ae60;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="txtSupplierID" layoutX="28.0" layoutY="164.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="93.0" promptText="Supplier ID" />
+      <JFXTextField fx:id="txtName" layoutX="152.0" layoutY="164.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="159.0" promptText="Name" />
+      <JFXTextField fx:id="txtAddress" layoutX="333.0" layoutY="164.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="159.0" promptText="Address" />
+      <JFXTextField fx:id="txtEmail" layoutX="792.0" layoutY="164.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="159.0" promptText="Email" />
+      <JFXTextField fx:id="txtTelephone" layoutX="646.0" layoutY="164.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="135.0" promptText="Telephone" />
+      <JFXTextField fx:id="txtAccountNo" layoutX="507.0" layoutY="164.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="128.0" promptText="Account No." />
+      <TableView fx:id="tblSupplier" layoutX="12.0" layoutY="205.0" prefHeight="624.0" prefWidth="1026.0">
+        <columns>
+          <TableColumn fx:id="colSupplierID" prefWidth="75.0" text="Supplier ID" />
+          <TableColumn fx:id="colName" prefWidth="196.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="165.0" text="Address" />
+            <TableColumn fx:id="colAccountNo" minWidth="0.0" prefWidth="260.0" text="Account No." />
+            <TableColumn fx:id="colTelephone" prefWidth="110.0" text="Telephone" />
+            <TableColumn fx:id="colEmail" prefWidth="82.0" text="Email" />
+            <TableColumn fx:id="colOption" prefWidth="137.0" text="Option" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="130.0" fitWidth="1050.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/SupplierForm.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTime" layoutX="893.0" layoutY="85.0" text="Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="674.0" layoutY="85.0" text="Date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ownerFormContext" prefHeight="900.0" prefWidth="1300.0" style="-fx-background-color: #f1f2f6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OwnerFormController">
+   <children>
+      <AnchorPane prefHeight="900.0" prefWidth="221.0" style="-fx-background-color: #130f40;">
+         <children>
+            <JFXButton layoutX="75.0" layoutY="798.0" onAction="#backOnAction" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #e74c3c;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="73.0" layoutY="650.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/user%20login.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="89.0" layoutY="728.0" text="Owner" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnDashboard" layoutX="-1.0" layoutY="39.0" onAction="#dashboardOnAction" prefHeight="39.0" prefWidth="221.0" style="-fx-background-color: #130f40;" text="DashBoard" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/dashboard.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnEmployee" layoutX="-2.0" layoutY="94.0" onAction="#employeeOnAction" prefHeight="39.0" prefWidth="221.0" style="-fx-background-color: #130f40;" text="Employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/employee.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnSupplier" layoutY="147.0" onAction="#supplierOnAction" prefHeight="39.0" prefWidth="221.0" style="-fx-background-color: #130f40;" text="Supplier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/supplier.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="btnSpareParts" layoutY="202.0" onAction="#sparePartOnAction" prefHeight="39.0" prefWidth="221.0" style="-fx-background-color: #130f40;" text="Spare Parts" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/sparePart.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="btnViewCustomer" layoutY="252.0" onAction="#viewCustomerOnAction" prefHeight="39.0" prefWidth="221.0" style="-fx-background-color: #130f40;" text="View Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/customer.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="btnViewBooking" layoutY="306.0" onAction="#viewBookingOnAction" prefHeight="39.0" prefWidth="221.0" style="-fx-background-color: #130f40;" text="View Booking" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/booking.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="btnViewPayment" layoutY="357.0" onAction="#viewPaymentOnAction" prefHeight="39.0" prefWidth="221.0" style="-fx-background-color: #130f40;" text="View Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/payment.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="btnViewServices" layoutY="411.0" onAction="#viewServiceOnAction" prefHeight="39.0" prefWidth="221.0" style="-fx-background-color: #130f40;" text="View Services " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/repairing-service.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <AnchorPane fx:id="context" layoutX="236.0" layoutY="50.0" prefHeight="800.0" prefWidth="1050.0" />
+   </children>
+</AnchorPane>

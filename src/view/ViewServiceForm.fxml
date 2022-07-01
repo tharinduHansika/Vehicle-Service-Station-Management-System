@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewServiceFormController">
+   <children>
+      <TableView fx:id="tblViewService" layoutX="15.0" layoutY="169.0" prefHeight="597.0" prefWidth="1020.0">
+        <columns>
+          <TableColumn fx:id="colServiceID" prefWidth="85.0" text="Service ID" />
+          <TableColumn fx:id="colVehicleID" prefWidth="104.0" text="Vehicle ID" />
+            <TableColumn fx:id="colEmployeeID" prefWidth="107.0" text="Employee ID" />
+            <TableColumn fx:id="colName" prefWidth="237.0" text="Name" />
+            <TableColumn fx:id="colDescription" prefWidth="157.0" text="Description" />
+            <TableColumn fx:id="colServiceCharge" prefWidth="126.0" text="Service Charge" />
+            <TableColumn fx:id="colDate" prefWidth="107.0" text="Date" />
+            <TableColumn fx:id="colTime" prefWidth="96.0" text="Time" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="130.0" fitWidth="1050.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/View%20ServiceForm.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTime" layoutX="884.0" layoutY="84.0" text="Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="667.0" layoutY="84.0" text="Date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

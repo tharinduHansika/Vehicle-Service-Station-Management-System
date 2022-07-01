@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="800.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VehicleFormController">
+   <children>
+      <JFXComboBox fx:id="cmbNIC" layoutX="31.0" layoutY="154.0" onAction="#txtNICOnAction" prefHeight="34.0" prefWidth="182.0" promptText="NIC" />
+      <JFXTextField fx:id="txtName" layoutX="239.0" layoutY="163.0" prefHeight="25.0" prefWidth="182.0" promptText="Name" />
+      <JFXTextField fx:id="txtAddress" layoutX="466.0" layoutY="163.0" prefHeight="25.0" prefWidth="182.0" promptText="Address" />
+      <JFXTextField fx:id="txtTelephone" layoutX="691.0" layoutY="163.0" prefHeight="25.0" prefWidth="182.0" promptText="Telephone" />
+      <JFXTextField fx:id="txtVehicleNo" layoutX="31.0" layoutY="213.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="142.0" promptText="Vehicle No" />
+      <JFXTextField fx:id="txtMileage" layoutX="495.0" layoutY="214.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="142.0" promptText="Mileage" />
+      <JFXComboBox fx:id="cmbType" layoutX="223.0" layoutY="209.0" prefHeight="34.0" prefWidth="85.0" promptText="Type" />
+      <JFXTextField fx:id="txtBrand" layoutX="350.0" layoutY="214.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="123.0" promptText="Brand" />
+      <JFXComboBox fx:id="cmbFuelType" layoutX="648.0" layoutY="210.0" prefHeight="34.0" prefWidth="108.0" promptText="Fuel Type" />
+      <JFXButton fx:id="btnSave" layoutX="918.0" layoutY="212.0" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="93.0" style="-fx-background-color: #27ae60;" text="Save" textFill="WHITE" />
+      <TableView fx:id="tblVehicle" layoutX="17.0" layoutY="259.0" prefHeight="471.0" prefWidth="1017.0">
+        <columns>
+          <TableColumn fx:id="colVehicleNo" prefWidth="99.0" text="Vehicle No" />
+          <TableColumn fx:id="colCustomerID" prefWidth="116.0" text="Customer ID" />
+            <TableColumn fx:id="colType" prefWidth="116.0" text="Type" />
+            <TableColumn fx:id="colBrand" prefWidth="116.0" text="Brand" />
+            <TableColumn fx:id="colMileage" prefWidth="125.0" text="Mileage" />
+            <TableColumn fx:id="colFuelType" prefWidth="133.0" text="Fuel type" />
+            <TableColumn fx:id="colTransmission" prefWidth="192.0" text="Transmission" />
+            <TableColumn fx:id="colOption" prefWidth="119.0" text="Option" />
+        </columns>
+      </TableView>
+      <JFXComboBox fx:id="cmbTransmission" layoutX="782.0" layoutY="210.0" prefHeight="34.0" prefWidth="108.0" promptText="Transmission" />
+      <ImageView fitHeight="130.0" fitWidth="1050.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/VehicleForm.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDate" layoutX="662.0" layoutY="85.0" text="Date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="890.0" layoutY="85.0" text="Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnNext" layoutX="918.0" layoutY="745.0" onAction="#btnNextOnAction" prefHeight="31.0" prefWidth="93.0" style="-fx-background-color: #3498db;" text="Next" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

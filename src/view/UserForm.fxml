@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="710.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserFormController">
+   <children>
+      <JFXTextField fx:id="txtUserName" layoutX="255.0" layoutY="145.0" prefHeight="33.0" prefWidth="215.0" promptText="User Name" />
+      <JFXTextField fx:id="txtPassword" layoutX="509.0" layoutY="145.0" prefHeight="33.0" prefWidth="186.0" promptText="Password" />
+      <TableView fx:id="tblUser" layoutX="40.0" layoutY="206.0" prefHeight="479.0" prefWidth="780.0">
+        <columns>
+          <TableColumn fx:id="colType" prefWidth="179.0" text="Type" />
+          <TableColumn fx:id="colUserName" prefWidth="228.0" text="User Name" />
+            <TableColumn fx:id="colPassword" prefWidth="233.0" text="Password" />
+            <TableColumn fx:id="colOption" prefWidth="139.0" text="Option" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnSave" layoutX="747.0" layoutY="145.0" onAction="#btnSaveOnAction" prefHeight="33.0" prefWidth="73.0" style="-fx-background-color: #eb3b5a;" text="Save" textFill="WHITE" />
+      <JFXComboBox fx:id="cmbType" layoutX="40.0" layoutY="145.0" prefHeight="33.0" prefWidth="164.0" promptText="Account Type" />
+      <ImageView fitHeight="130.0" fitWidth="860.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/UserForm.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

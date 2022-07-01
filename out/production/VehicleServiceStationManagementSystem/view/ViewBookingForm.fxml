@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewBookingFormController">
+   <children>
+      <TableView fx:id="tblBooking" layoutX="17.0" layoutY="154.0" prefHeight="682.0" prefWidth="1016.0">
+         <columns>
+            <TableColumn fx:id="colBookingID" prefWidth="165.0" text="Booking ID" />
+            <TableColumn fx:id="colVehicleNo" prefWidth="163.0" text="Vehicle No" />
+            <TableColumn fx:id="colCustomerID" prefWidth="163.0" text="Customer ID" />
+            <TableColumn fx:id="colServiceType" prefWidth="270.0" text="Service Type" />
+            <TableColumn fx:id="colDate" prefWidth="132.0" text="Date" />
+            <TableColumn fx:id="colTime" prefWidth="122.0" text="Time" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="130.0" fitWidth="1050.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/View%20BookingForm.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTime" layoutX="902.0" layoutY="86.0" text="Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="672.0" layoutY="86.0" text="Date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
